@@ -64,7 +64,7 @@ app.add_middleware(
 # Security: Trusted hosts
 app.add_middleware(
     TrustedHostMiddleware,
-    allowed_hosts=["localhost", "127.0.0.1", "*.localhost"]
+    allowed_hosts=["*"]
 )
 
 # ----------------------------------------------------------
