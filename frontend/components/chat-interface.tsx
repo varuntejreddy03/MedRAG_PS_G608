@@ -96,7 +96,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onDiagnosis, initialPromp
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/chat', {
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const response = await fetch(`${API_URL}/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -167,12 +168,12 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onDiagnosis, initialPromp
   return (
     <Card className="h-full bg-slate-900/90 backdrop-blur-lg border-slate-700/30 shadow-2xl">
       <CardHeader className="pb-3">
-        <div className="flex items-center justify-between">
-          <CardTitle className="flex items-center gap-2 text-white">
-            <Bot className="h-5 w-5 text-emerald-400" />
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <CardTitle className="flex items-center gap-2 text-white text-base sm:text-lg">
+            <Bot className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400" />
             MedRAG AI Assistant
           </CardTitle>
-          <div className="flex gap-2">
+          <div className="flex gap-2 w-full sm:w-auto">
             <Button
               variant="outline"
               size="sm"
@@ -209,10 +210,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onDiagnosis, initialPromp
                   className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
                 >
                   <div
-                    className={`max-w-[80%] rounded-lg p-3 ${
+                    className={`max-w-[85%] sm:max-w-[80%] rounded-lg p-2 sm:p-3 text-sm sm:text-base ${
                       message.sender === 'user'
-                        ? 'bg-emerald-600/80 text-white ml-4'
-                        : 'bg-slate-800/80 text-white mr-4 border border-slate-600/20'
+                        ? 'bg-emerald-600/80 text-white ml-2 sm:ml-4'
+                        : 'bg-slate-800/80 text-white mr-2 sm:mr-4 border border-slate-600/20'
                     }`}
                   >
                     <div className="flex items-start gap-2">
