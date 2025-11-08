@@ -55,7 +55,11 @@ async def rate_limit_middleware(request: Request, call_next):
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "*",
+        "https://medrag-app.surge.sh",
+        "https://*.surge.sh"
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
