@@ -18,7 +18,7 @@ def download_from_s3():
     files = [
         'chunked_ehr_index.faiss',
         'patient_chunks.json',
-        'release_evidences.json'
+        'knowledge_graph.graphml.xml'
     ]
     
     models_dir = Path('models')
