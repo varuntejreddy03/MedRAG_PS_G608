@@ -1,6 +1,6 @@
 // API client for MedRAG backend integration
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL ='http://18.212.60.60:8000';
 
 export interface PatientData {
   fullName: string;
