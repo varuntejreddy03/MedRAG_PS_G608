@@ -21,12 +21,10 @@ build/
 medrag.db
 
 # Large Model Files (store in S3)
-models/*.faiss
-models/*.json
-models/*.xml
+models/
 
-# Data files
-data/*.csv
+# Data files (store in S3)
+data/
 
 # IDE
 .vscode/
