@@ -7,39 +7,32 @@ __pycache__/
 venv/
 env/
 ENV/
-.venv
+*.egg-info/
+dist/
+build/
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
-# Environment variables
+# Environment
 .env
 .env.local
 
-# Models (large files - stored in S3)
-backend/models/*.faiss
-backend/models/*.pkl
-backend/models/*.json
-backend/models/*.xml
+# Database
+*.db
+*.sqlite3
+medrag.db
 
-# Large data files
-backend/data/train.csv
+# Large Model Files (store in S3)
+models/*.faiss
+models/*.json
+models/*.xml
 
-# Node.js
-node_modules/
-.next/
-out/
-build/
-dist/
+# Data files
+data/*.csv
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
 # OS
 .DS_Store
@@ -47,8 +40,3 @@ Thumbs.db
 
 # Logs
 *.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
