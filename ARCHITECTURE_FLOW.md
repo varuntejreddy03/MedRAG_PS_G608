@@ -843,4 +843,7 @@ GET / → {
 
 ---
 
-This architecture document provides a comprehensive view of the MedRAG system's internal workings, data flows, and deployment structure. For implementation details, refer to the source code and PROJECT_OVERVIEW.md.
+This architecture document provides a comprehensive view of the MedRAG system's internal workings, data flows, and deployment structure. For implementation details, refer to the source code and [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md).
+
+**Version**: 2.0.0  
+**Last Updated**: 2024-12-16

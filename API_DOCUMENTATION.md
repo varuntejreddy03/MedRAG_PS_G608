@@ -917,7 +917,16 @@ For issues or questions:
 
 ---
 
-**API Version**: 2.0  
-**Last Updated**: 2024  
+**API Version**: 2.0.0  
+**Last Updated**: 2024-12-16  
 **Backend Framework**: FastAPI 0.68+  
 **OpenAPI Spec**: Available at `/docs` (Swagger UI) and `/redoc` (ReDoc)
+
+## API Changelog
+
+### Version 2.0.0 (2024-12-16)
+- Initial comprehensive API documentation
+- All endpoints documented with examples
+- Added request/response schemas
+- Included cURL, JavaScript, and Python examples
+- Security best practices documented

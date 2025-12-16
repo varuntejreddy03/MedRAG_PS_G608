@@ -455,6 +455,14 @@ This project is for educational and research purposes. Consult with legal counse
 
 ---
 
-**Version**: 2.0  
+**Version**: 2.0.0  
 **Author**: Varun Tej  
-**Last Updated**: 2024
+**Last Updated**: 2024-12-16
+
+## Changelog
+
+### Version 2.0.0 (2024-12-16)
+- Added comprehensive project overview documentation
+- Documented all system flows and architecture
+- Included complete API reference
+- Added deployment and security guidelines
